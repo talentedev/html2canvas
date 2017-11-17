@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<meta charset="utf-8">
+	  	<title>Html5 local file api tut</title>
+	  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	  	<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.3/css/foundation.min.css" rel="stylesheet" /> -->
+
+	  	<!-- Custom style -->
+	  	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		
+		<form>
+			<div><span>Base Price:	</span><input type="text" name="price" id="price"></div><br>
+			<div><span>Cash Price:	</span><input type="text" name="cashe" id="cashe"></div><br>
+			<div><span>Title:	</span><input type="text" name="title" id="financing"></div>
+		</form>
+		<br><br>
+		<input type="file" id="files" name="files[]" multiple />
+		<input type="button" value="Refresh Page" onClick="location.href=location.href">
+		<input type="button" id="btnSave" value="Save PNG"/><br><br>
+		<!-- <input type="file" id="the-photo-file-field" name="files[]" multiple /><br><br> -->
+
+		<div id="content-disp" style="border: 10px solid red; padding: 20px; background-color: white;" onclick="imgDownload(this)" download>
+
+			<div>
+	            <img src="img/log.png">
+	            <h2 style="display: inline-block;">
+	                <span id="capitol">CAPITOL</span><span id="sheds">SHEDS</span><span id="urlcom">.com</span>
+	            </h2>
+	        </div>
+			<div id="img-canvace" style="float: left; width: 800px; display: block;">
+				<div id="preview" >
+          		<!--image will be inserted here-->
+				</div>
+				<div>
+					<div class="thumbnails" style="float: left;"></div>
+					<div class="thumbnails"></div>
+				</div>
+				
+				
+			</div>
+			<div id="data" style="width: 400px; float: right;">
+				<div><span class='label-color'>Base Price:</span><span id="price_span"></span></div><br>
+				<div><span class='label-color'>Cash Price:</span><span id="cash_span"></span></div><br>
+				<div>
+					<span class='label-color'>Month Financing: <br>
+					<span class='contents' style="color: block">With Approved Credit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly</span>
+				</div><br>
+				<div>
+					<span class='label-color'>60 Month Financing: <br>
+					<span class='contents' style="color: block">With Approved Credit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly</span> 
+				</div><br>
+				<div>
+					<span class='label-color'>36 Month Rent-to-Own: <br>
+					<span class='contents'>Security Deposit Required&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monthly</span>
+				</div><br>
+				<div><span class='label-color'>Lay-Away available <br>
+				<span style='font-size:40px;font-weight:bold;margin-left:10%;color:#000000;'>This Shed</span></div><br><br><br><br><br>
+				<span style='font-size:35px;font-weight:bold;margin-left:10%;'>Spaces:</span>
+				<!-- <h2 id="name"></h2>
+				<p id="size"></p>
+				<p id="type"></p> -->
+			</div>
+		</div>
+
+		<!-- Common Script -->
+		<script type="text/javascript" src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+		<script type="text/javascript" src="js_html2canvas_jquery.plugin.html2canvas.js"></script>
+
+		<!-- Custom Script -->
+		<script type="text/javascript" src="style.js"></script>
+	</body>
+</html>

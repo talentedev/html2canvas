@@ -1,0 +1,74 @@
+body {
+	font-family: Gill Sans Extrabold, sans-serif;
+}
+
+#preview span:nth-child(1) img {
+	width: 600px;
+	height: 350px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+}
+#preview span:nth-child(2) img {
+	width: 350px;
+	height: 263px;
+}
+#preview span:nth-child(3) img {
+	width: 350px;
+	height: 263px;
+}
+
+#capitol {
+  	color: #E0323B;
+  	font-size: 50px;
+}
+
+#sheds {
+  	color: #E0B528;
+  	font-size: 50px;
+}
+
+#urlcom {
+  	color: #E0323B;
+  	font-size: 30px;
+}
+
+#data {
+	display: inline-block;
+}
+
+#data .label-color {
+	color: #009650;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+#data .content-color {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#data .content {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10%;
+}
+
+#data span.contents {
+	font-size: 18px;
+	color: #000000;
+	font-weight: bold;
+	margin-left: 10%;
+}
+
+#data #price_span, #cash_span {
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+#content-disp {
+    min-height: 900px;
+    width: 1200px;
+    height: 100%;
+    cursor: pointer;
+}

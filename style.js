@@ -1,25 +1,28 @@
 $(function() { 
     $("#btnSave").click(function() { 
         html2canvas($("#content-disp"), {
-            onrendered: function (canvas) {
+          onrendered: function (canvas) {
 		        var a = document.createElement('a');
 		        // toDataURL defaults to png, so we need to request a jpeg, then convert for file download.
-		        a.href = canvas.toDataURL("image/jpeg").replace("image/jpeg", "image/octet-stream");
+		        a.href = canvas.toDataURL();
 		        a.download = 'somefilename.jpg';
 		        a.click();
-				}
+  				}
         });
     });
 });
 
 function handleFileSelect(evt) {
     var files = evt.target.files; // FileList object
+    var img_phone = document.getElementById("phones").value;
     var img_price = document.getElementById("price").value;
-	var img_cashe = document.getElementById("cashe").value;
-	var img_financing = document.getElementById("financing").value;
+	  var img_ttl = document.getElementById("ttl").value;
+	  var img_specsing = document.getElementById("specsing").value;
 
-    document.getElementById('price_span').innerHTML = img_price;
-    document.getElementById('cash_span').innerHTML = img_cashe;
+    document.getElementById('phonenumber').innerHTML = img_phone;
+    document.getElementById('price_contents').innerHTML = img_price;
+    document.getElementById('ttl_contents').innerHTML = img_ttl;
+    document.getElementById('specs_contents').innerHTML = img_specsing;
 
     // Loop through the FileList and render image files as thumbnails.
     for (var i = 0, f; f = files[i]; i++) {

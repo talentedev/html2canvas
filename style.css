@@ -2,19 +2,52 @@ body {
 	font-family: Gill Sans Extrabold, sans-serif;
 }
 
+#content-disp {
+    width: 1200px;
+    height: 900px;
+}
+
+#img-canvace {
+	float: left; width: 800px; display: block; margin-left: 10px; margin-top: 110px;z-index: 99;position: absolute;
+}
+
+#phonenumber {
+	margin-top: 19px;font-size: 76px;font-weight: bold;margin-left: 700px;
+    position: absolute;
+}
+#price_contents {
+	margin-top: 114px;font-size: 30px;font-weight: bold;margin-left: 1050px;
+    position: absolute;
+}
+#ttl_contents {
+	margin-top: 522px;font-size: 30px;font-weight: bold;margin-left: 700px;
+    position: absolute;color:#3E3F99;
+}
+#specs_contents {
+	margin-top: 641px;font-size: 30px;font-weight: bold;margin-left: 819px;
+    position: absolute;
+}
+#weblink {
+	float: right;
+    margin-right: 30px;
+    margin-top: 858px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
 #preview span:nth-child(1) img {
-	width: 600px;
-	height: 350px;
-    border: 1px solid #000;
-    margin: 10px 5px 0 0;
+	width: 640px;
+	height: 480px;
+	margin-bottom: -4px;
 }
 #preview span:nth-child(2) img {
-	width: 350px;
-	height: 263px;
+	width: 400px;
+	height: 300px;
 }
 #preview span:nth-child(3) img {
-	width: 350px;
-	height: 263px;
+	width: 400px;
+	height: 300px;
 }
 
 #capitol {
@@ -64,11 +97,4 @@ body {
 	font-size: 18px;
 	font-weight: bold;
 	margin-left: 30px;
-}
-
-#content-disp {
-    min-height: 900px;
-    width: 1200px;
-    height: 100%;
-    cursor: pointer;
 }
